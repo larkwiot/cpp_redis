@@ -303,7 +303,7 @@ namespace cpp_redis {
 
 				m_sync_condvar.notify_all();
 		});
-		t.detach();
+		t.join();
 	}
 
 	void
