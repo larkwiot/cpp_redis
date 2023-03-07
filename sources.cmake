@@ -15,7 +15,6 @@ set(cpp_redis_sources
   sources/misc/dispatch_queue.cpp
   sources/misc/logger.cpp
   sources/network/redis_connection.cpp
-  sources/network/tcp_client.cpp
   )
 
 set(cpp_redis_includes
