@@ -101,7 +101,7 @@ set(deps_libraries ${PROJECT_SOURCE_DIR}/deps/lib)
 
 # filter tcp_client if no tacopie
 if (USE_CUSTOM_TCP_CLIENT)
-  file(GLOB tacopie_cpp "sources/network/tcp_client.cpp")
+  file(GLOB tacopie_cpp "sources/network/tcp_client.*")
   list(REMOVE_ITEM ${cpp_redis_sources} ${tacopie_cpp})
 endif ()
 
